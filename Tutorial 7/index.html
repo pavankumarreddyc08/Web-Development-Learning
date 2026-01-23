@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms tutorial</h1>
+    <!-- Forms Tutorial -->
+    <form action="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required />
+      </div>
+
+      <div>
+        <input type="radio" value="male" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="gender" id="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div>
+        <input type="checkbox" name="subscribe" id="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label>
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">Accept terms and conditions</label>
+      </div>
+
+      <div>
+        <label for="comment">Enter your comment:</label><br>
+        <textarea name="comment " id="comment"></textarea>
+      </div>
+
+      <div>
+        <label for="">Select fruits:</label> <br>
+        <select name="fruits" id="fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+        </select>
+      </div>
+
+      <br>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
