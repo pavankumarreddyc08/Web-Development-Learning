@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float & Clear</title>
+    <style>
+        img{
+            float: left;
+        }
+        .cards{
+            border: 2px solid black;
+            /* display: flow-root; */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: yellow;
+            clear: left;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        src="https://media.istockphoto.com/id/1219780351/photo/businessman-looks-at-lighthouse-while-stranded-on-boat.webp?s=612x612&w=is&k=20&c=W8PwaTbZKcB1zimALbIiIlBnsy8x2tY-N1xP7fvRm8k="
+        alt="" width="230"
+      />
+      <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique sint quam dolor facere inventore architecto quo nam, in odit quas debitis nobis!</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+    </div>
+  </body>
+</html>
